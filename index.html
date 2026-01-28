@@ -3,24 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Menù Jill</title>
+    
     <meta property="og:title" content="Menù Jill">
     <meta property="og:description" content="Sfoglia il nostro menù digitale aggiornato.">
-    <meta property="og:image" content="pagina1.png">
+    <meta property="og:image" content="https://jillrende.github.io/menu/1.png">
+    <meta property="og:url" content="https://jillrende.github.io/menu/">
     <meta property="og:type" content="website">
 
     <style>
-        body { margin: 0; background-color: #000; text-align: center; }
-        img { width: 100%; max-width: 800px; display: block; margin: 0 auto; }
+        /* Sfondo e Reset */
+        body { 
+            margin: 0; 
+            padding: 0; 
+            background-color: #000; 
+            text-align: center; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        /* Immagini Menù */
+        img { 
+            width: 100%; 
+            max-width: 800px; 
+            display: block; 
+            margin: 0 auto;
+            border: none;
+            padding: 0;
+        }
+
+        /* Tasto Prenota Elegante */
+        .btn-prenota {
+            position: fixed;
+            bottom: 25px;
+            right: 20px;
+            background-color: #001f3f; /* Blu Scuro Elegante */
+            color: #ffffff;            /* Bianco */
+            padding: 10px 20px;
+            border-radius: 8px;        /* Bordi leggermente arrotondati (più elegante del tondo) */
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            transition: all 0.2s ease;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .btn-prenota:active {
+            transform: scale(0.95);
+            background-color: #001226;
+        }
+
+        /* Icona WhatsApp in bianco */
+        .icon-wa {
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+            filter: brightness(0) invert(1); /* Rende l'icona bianca */
+        }
     </style>
 </head>
 <body>
-    <img src="pagina1.png">
-    <img src="pagina2.png">
-    <img src="pagina3.png">
-    <img src="pagina4.png">
-    <img src="pagina5.png">
-    <img src="pagina6.png">
+
+    <img src="1.png">
+    <img src="2.png">
+    <img src="3.png">
+    <img src="4.png">
+    <img src="5.png">
+    <img src="6.png">
+    <img src="7.png">
+    <img src="8.png">
+    <img src="9.png">
+    <img src="10.png">
+    <img src="11.png">
+    <img src="12.png">
+    <img src="13.png">
+
+    <a href="https://wa.me/393913907273?text=Ciao!%20Vorrei%20prenotare%20un%20tavolo" class="btn-prenota">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="icon-wa" alt="WA">
+        Prenota Tavolo
+    </a>
+
 </body>
 </html>
